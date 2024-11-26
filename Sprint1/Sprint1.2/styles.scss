@@ -1,0 +1,366 @@
+$primary: #5265E1;
+$secondary: #ff4136;
+$navbar-hover-color:$secondary; 
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+$accordion-button-active-bg:              transparent;
+$accordion-button-active-color:           black;
+$accordion-color:                         transparent;
+$accordion-bg:                            transparent;
+$accordion-button-focus-border-color:     transparent;
+$accordion-button-focus-box-shadow:       none;
+$accordion-icon-color:                    $primary; 
+$accordion-icon-active-color:             $secondary;
+$accordion-icon-width:                    1.25rem;
+
+
+
+
+$nav-link-color:                    #808080;
+$nav-tabs-link-hover-border-color:  #808080;
+$nav-link-hover-color:              $secondary;
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.elemento{
+    overflow-x: hidden;
+
+}
+.container{
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+
+.logobrowser{
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.card{
+    width: 300px;
+    height: 350px;
+}
+
+.accordion {
+    max-width: 500px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.accordion-body code {
+    color: #808080; 
+}
+
+.accordion-button:hover {
+    color: $secondary; 
+}
+
+
+
+
+.nav-tabs {
+    border: none;
+    padding-left: 0; 
+    padding-right: 0;
+    margin-bottom: 0; 
+}
+
+.nav-tabs .nav-link {
+    border: none; 
+    border-bottom: 2px solid gray; 
+    padding: 10px 15px; 
+    margin-right: -1px;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 4px solid $secondary; 
+}
+
+@media (min-width: 768px) {
+    .nav-tabs .nav-link {
+        padding: 10px 75px; 
+    }
+}
+
+
+.card-body {
+    .btn {
+
+        &:hover {
+        background-color: white; 
+        color: $primary;
+
+        }
+    }
+}
+.navbar-nav{
+
+    .nav-item{
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+
+.cero{
+    color: white;
+    &:hover {
+        background-color: white; 
+        color: $secondary;
+    }
+}
+
+
+.primero{
+    &:hover {
+        background-color: white; 
+        color: $primary;
+    }
+}
+.segundo{
+    
+    &:hover {
+        background-color: white; 
+        color: #808080;
+        border: 1px solid #808080;
+    }
+}
+
+
+
+$navbar-dark-hover-color: $navbar-hover-color;  
+$navbar-dark-brand-hover-color: $navbar-hover-color;  
+
+
+$navbar-light-hover-color: $navbar-hover-color;  
+$navbar-light-brand-hover-color: $navbar-hover-color;  
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $navbar-dark-hover-color;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $navbar-light-hover-color;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: $navbar-dark-brand-hover-color;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: $navbar-light-brand-hover-color;
+}
+
+.navbar-dark .navbar-toggler-icon:hover,
+.navbar-light .navbar-toggler-icon:hover {
+    stroke: $navbar-hover-color;
+}
+
+
+.azul {
+    background-color: #5265E1; 
+    color: white;
+    width: 100%; 
+    min-height: 200px; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.pie{
+    background-color: #1C325B; 
+    width: 100%; 
+    min-height: 40px; 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+
+
+}
+
+
+.contacto{
+        background-color: $secondary;
+        color: white;
+        border: 2px solid transparent; 
+    
+        &:hover {
+            background-color: white; 
+            color: $secondary; 
+            border-color: $secondary; 
+        }
+}
+
+
+ul {
+    list-style-type: none;  
+    margin: 0;              
+    padding: 0;            
+    }
+
+.pieItem{
+    color: white;
+}
+
+.pieItem:hover{
+    color: $secondary;
+}
+
+.L1{
+    transition: filter 0.3s ease; 
+}
+
+
+
+.L1:hover{
+    filter: hue-rotate(30deg) saturate(200%);
+}
+
+
+
+.custom-tooltip {
+    color: $secondary;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control.is-invalid {
+    border-color: $secondary;
+    box-shadow: 0 0 5px$secondary;
+}
+
+.invalid-tooltip {
+    color: white;
+    background-color: $secondary; 
+    border: 1px solid $secondary;
+}
+.modal{
+    background-color: #0A3981;
+    opacity: 0.75;
+}
+
+.modal-content{
+    background-color: #0A3981;
+    opacity: 0.75;
+}
+.modal-body .navbar-nav .nav-item{
+    color: white ;
+}
+
+.linea {
+    height: 2px; 
+    background-color:   white; 
+    opacity: 0.25;
+    margin: 5px 0; 
+    
+}
+
+.modal-body .navbar-nav .nav-item .btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 300px;
+}
+
+
+.model-header{
+    border: none;
+}
+
+
+
+
+.contenedor {
+    position: relative; 
+    display: inline-block;
+}
+
+.imagen {
+    display: block; 
+    position: relative;
+    z-index: 2; 
+}
+
+
+
+.semicirculo{
+    background-color: #5265E1;
+    border-top-left-radius: 190px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    width: 2000%;
+    height: 78%;
+    bottom: 0; 
+    left: 25%;
+}
+
+
+
+.semicirculo2{
+    background-color: $primary;
+    border-top-right-radius: 190px;
+    border-bottom-right-radius: 200px;
+    position: absolute;
+    width: 2000%;
+    height: 96%;
+    bottom: -60px; 
+    right: 10%;
+}
+
+.semicirculo3{
+    background-color: $primary;
+    border-top-right-radius: 190px;
+    border-bottom-right-radius: 200px;
+    position: absolute;
+    width: 2000%;
+    height: 87%;
+    bottom: -23px;
+    right: 25%;
+
+}
+.semicirculo4{
+    background-color: $primary;
+    border-top-right-radius: 190px;
+    border-bottom-right-radius: 200px;
+    position: absolute;
+    width: 2000%;
+    height: 91%;
+    bottom: -45px;
+    right: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
