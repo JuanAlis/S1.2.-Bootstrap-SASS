@@ -4,7 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root, 
+:root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11470,6 +11470,10 @@ body {
     padding: 10px 75px;
   }
 }
+.card {
+  border: none;
+}
+
 .card-body .btn:hover {
   background-color: white;
   color: #5265E1;
@@ -11536,12 +11540,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: absolute;
 }
 
 .contacto {
   background-color: #ff4136;
   color: white;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
+}
+@media (max-width: 768px) {
+  .contacto {
+    width: 100%;
+  }
 }
 .contacto:hover {
   background-color: white;
@@ -11596,7 +11606,6 @@ ul {
 
 .modal-content {
   background-color: #0A3981;
-  opacity: 0.75;
 }
 
 .modal-body .navbar-nav .nav-item {
@@ -11617,7 +11626,7 @@ ul {
   width: 300px;
 }
 
-.model-header {
+.modal-header {
   border: none;
 }
 
@@ -11637,7 +11646,7 @@ ul {
   border-top-left-radius: 190px;
   border-bottom-left-radius: 200px;
   position: absolute;
-  width: 2000%;
+  width: 200%;
   height: 78%;
   bottom: 0;
   left: 25%;
@@ -11648,7 +11657,7 @@ ul {
   border-top-right-radius: 190px;
   border-bottom-right-radius: 200px;
   position: absolute;
-  width: 2000%;
+  width: 200%;
   height: 96%;
   bottom: -60px;
   right: 10%;
@@ -11659,7 +11668,7 @@ ul {
   border-top-right-radius: 190px;
   border-bottom-right-radius: 200px;
   position: absolute;
-  width: 2000%;
+  width: 200%;
   height: 87%;
   bottom: -23px;
   right: 25%;
@@ -11670,8 +11679,20 @@ ul {
   border-top-right-radius: 190px;
   border-bottom-right-radius: 200px;
   position: absolute;
-  width: 2000%;
+  width: 200%;
   height: 91%;
   bottom: -45px;
   right: 15%;
+}
+
+@media (min-width: 768px) {
+  .alinear {
+    margin-left: 63px;
+  }
+}
+
+@media (min-width: 768px) {
+  .alinear1 {
+    margin-right: 83px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -26,7 +26,7 @@ $nav-link-hover-color:              $secondary;
 
 
 
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body{
     background-color: white;
@@ -104,8 +104,12 @@ body{
     }
 }
 
+.card{
+    border: none;
+}
 
 .card-body {
+    
     .btn {
 
         &:hover {
@@ -188,7 +192,7 @@ $navbar-light-brand-hover-color: $navbar-hover-color;
     min-height: 200px; 
     margin: 0; 
     padding: 0; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .pie{
@@ -198,6 +202,7 @@ $navbar-light-brand-hover-color: $navbar-hover-color;
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
+    position: absolute;
 
 
 }
@@ -206,7 +211,10 @@ $navbar-light-brand-hover-color: $navbar-hover-color;
 .contacto{
         background-color: $secondary;
         color: white;
-        border: 2px solid transparent; 
+        border: 1px solid transparent; 
+        @media (max-width: 768px) { 
+            width: 100%;
+        }
     
         &:hover {
             background-color: white; 
@@ -262,11 +270,11 @@ ul {
 .modal{
     background-color: #0A3981;
     opacity: 0.75;
+
 }
 
 .modal-content{
     background-color: #0A3981;
-    opacity: 0.75;
 }
 .modal-body .navbar-nav .nav-item{
     color: white ;
@@ -288,8 +296,9 @@ ul {
 }
 
 
-.model-header{
+.modal-header{
     border: none;
+    
 }
 
 
@@ -313,7 +322,7 @@ ul {
     border-top-left-radius: 190px;
     border-bottom-left-radius: 200px;
     position: absolute;
-    width: 2000%;
+    width: 200%;
     height: 78%;
     bottom: 0; 
     left: 25%;
@@ -326,7 +335,7 @@ ul {
     border-top-right-radius: 190px;
     border-bottom-right-radius: 200px;
     position: absolute;
-    width: 2000%;
+    width: 200%;
     height: 96%;
     bottom: -60px; 
     right: 10%;
@@ -337,7 +346,7 @@ ul {
     border-top-right-radius: 190px;
     border-bottom-right-radius: 200px;
     position: absolute;
-    width: 2000%;
+    width: 200%;
     height: 87%;
     bottom: -23px;
     right: 25%;
@@ -348,10 +357,27 @@ ul {
     border-top-right-radius: 190px;
     border-bottom-right-radius: 200px;
     position: absolute;
-    width: 2000%;
+    width: 200%;
     height: 91%;
     bottom: -45px;
     right: 15%;
+}
+
+.alinear{
+
+    @media (min-width: 768px) { 
+        margin-left: 63px;
+
+    }
+
+}
+
+.alinear1{
+    
+    @media (min-width: 768px) { 
+        margin-right: 83px;
+    }
+
 }
 
 
