@@ -23,3 +23,7 @@ Para clonar y configurar este proyecto localmente, sigue estos pasos:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/JuanAlis/S1.2.-Bootstrap-SASS-Juan.git
+   
+2. Instalar dependecias
+   ```bash  
+   npm install 
