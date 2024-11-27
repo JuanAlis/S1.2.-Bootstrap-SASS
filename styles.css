@@ -11695,4 +11695,10 @@ ul {
   .alinear1 {
     margin-right: 83px;
   }
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=styles.css.map */
